@@ -1,63 +1,66 @@
 body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-sm {
-  max-width: 540px;
+    max-width: 540px;
 }
 
 .title {
-  text-align: center;
-  margin-top: 10vh;
+    text-align: center;
+    margin-top: 10vh;
 }
+
 
 /* FORM */
 
 form.auth-modal {
-  padding: 2rem;
-  border: 3px solid black;
-  border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
+    padding: 2rem;
+    border: 3px solid black;
+    /* border-radius: 255px 25px 225px 25px/25px 225px 25px 255px; */
 }
 
 .link:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .auth-modal {
-  display: none;
+    display: none;
 }
+
 .auth-modal.active {
-  display: block;
+    display: block;
 }
 
 .error-container {
-  display: none;
+    display: none;
 }
 
 .error-container.active {
-  display: block;
+    display: block;
 }
+
 
 /* Dashboard */
 
 .dashboard {
-  display: none;
+    display: none;
 }
 
 .dashboard.active {
-  display: block;
-  padding: 1rem;
+    display: block;
+    padding: 1rem;
 }
 
 form.dashboard-form {
-  border: none;
+    border: none;
 }
 
 button.save {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
