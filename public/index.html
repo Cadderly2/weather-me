@@ -7,7 +7,8 @@
     <title>Welcome to Firebase Hosting</title>
 
     <!-- bootstrap sketchy theme -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="./css/styles2.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -25,7 +26,7 @@
             &times;
           </button>
                 <p>
-                    <strong>Oh snap!</strong>
+                    <strong>Whoops!</strong>
                     <em class="error-message">Register error!</em>
                 </p>
             </div>
@@ -35,19 +36,13 @@
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control form-control-lg" name="email" aria-describedby="email" placeholder="abc@123.com" />
-                    <small class="form-text text-muted">I will never share your email with anyone else 🙊.</small
-            >
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              class="form-control form-control-lg"
-              name="password"
-              placeholder="Password"
-            />
-            <small class="form-text text-muted"
-              >Your password is safely hashed by Firestore 🔥.</small
+                    <!-- <small class="form-text text-muted">I will never share your email with anyone else 🙊.</small
+            > -->
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control form-control-lg" name="password" placeholder="Password" />
+                    <small class="form-text text-muted">Your password is safely hashed.</small
             >
           </div>
           <br />
@@ -92,9 +87,9 @@
               aria-describedby="email"
               placeholder="YourEmail@example.com"
             />
-            <small class="form-text text-muted"
+            <!-- <small class="form-text text-muted"
               >I hope you remember your email 🙏.</small
-            >
+            > -->
           </div>
           <div class="form-group">
             <label for="password">Password</label>
@@ -104,9 +99,9 @@
               name="password"
               placeholder="Password"
             />
-            <small class="form-text text-muted"
+            <!-- <small class="form-text text-muted"
               >What's your password? 👀.</small
-            >
+            > -->
           </div>
           <br />
           <div>
@@ -128,7 +123,7 @@
         <!-- Navbar -->
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
-          👋 &nbsp;<span class="navbar-brand" href="#">UserEmail</span>
+          Hi 👋 &nbsp;<span class="navbar-brand" href="#">UserEmail</span>
           <button
             class="navbar-toggler"
             type="button"
@@ -163,9 +158,7 @@
         <!-- Dashboard -->
 
         <p class="lead mt-4">
-          <em>Weather Me</em>⚡ sends weather summary updates for the same day
-          based on the user's zipcode!. The text comes around 8 AM and contains
-          forecast by 3-hour intervals until midnight.
+          <em>Weather Assist</em>
         </p>
         <hr class="my-4" />
         <form class="dashboard-form" id="app" @submit.prevent="processForm">
@@ -179,11 +172,11 @@
                 name="phoneNumber"
                 aria-describedby="Phone number"
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                placeholder="ex) 512-788-3939"
+                placeholder="ex) 513-788-3939"
                 v-model="phoneNumber"
               />
               <small id="emailHelp" class="form-text text-muted"
-                >Your phone number with area code with dashes ☎</small
+                >Your phone number with area code and dashes 📞</small
               >
             </div>
             <div class="form-group">

@@ -58,8 +58,8 @@ exports.storeUserInfo = functions.https.onCall(async(data, context) => {
 
 // scheduled function
 exports.scheduledFunctionCrontab = functions.pubsub
-    .schedule('55 7 * * *') // fires off alarm at at 7:55AM. Takes about 5 minutes
-    .timeZone('America/Chicago') // Defaults to central time
+    .schedule('25 08 * * *') // fires off alarm 
+    .timeZone('America/New_York') // Defaults to eastern time
     .onRun(async(context) => {
         const waitFor = (ms) => new Promise((r) => setTimeout(r, ms));
 

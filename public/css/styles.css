@@ -62,5 +62,5 @@ form.dashboard-form {
 button.save {
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
 }
